@@ -44,7 +44,7 @@ function priceAfterCategoryDiscount(product){
 };
 function findProductById(id){
     for (let product of products) {
-        if (product.id === id) return products;
+        if (product.id === id) return product;
     }
        return null
 }
