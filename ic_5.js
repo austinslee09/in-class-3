@@ -23,24 +23,25 @@ function getCategoryDiscount(category){
 
 {switch (product.catagory){
     case 'gear':
-        return=.1
+        return .1
     break;
     case 'apparel':
-        return=.15
+        return .15
     break;
     case 'snacks':  
-        return=.08
+        return .08
     break;
     case 'access' :
-        return=.05
+        return .05
     break;
     default:
-        return=0
+        return 0
 }}}
-}
-function.priceAfterCategoryDiscount(product){
+};
+function priceAfterCategoryDiscount(product){
     rate=getCategoryDiscount(product.category)
     return product.price * (1 - rate);
-}
-function findProductById(id)
+};
+function findProductById(id){
 return (products.name)
+}
