@@ -43,5 +43,11 @@ function priceAfterCategoryDiscount(product){
     return product.price * (1 - rate);
 };
 function findProductById(id){
-return (products.name)
+    for (let product of products) {
+        if (product.id === id){
+        return product
+        }else{
+        return null
+        }
+    }
 }
